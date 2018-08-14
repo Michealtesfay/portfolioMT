@@ -1,0 +1,31 @@
+@import "reset";
+@import "mixins";
+@import "variable";
+
+
+#main-nav {
+  background-color: $deepBlue;
+  ul{
+    width: 100%;
+  }
+  li{
+    float: left;
+    width: 14%;
+  }
+  a{
+    color: $offWhite;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    text-align: center;
+  }//end of #main-nnav
+}
+#main-nav ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.lead-banner{
+  @include banner;
+  text-align: center;
+}
