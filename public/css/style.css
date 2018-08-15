@@ -36,11 +36,12 @@ li {
     padding: 16px;
     display: block;
     text-align: center; }
-
-#main-nav ul:after {
-  content: "";
-  display: block;
-  clear: both; }
+    #main-nav a:hover {
+      background-color: #333; }
+  #main-nav:after {
+    content: "";
+    display: block;
+    clear: both; }
 
 .lead-banner {
   width: 100%;
@@ -61,3 +62,13 @@ li {
   .lead-banner span.title {
     font-weight: normal;
     margin-bottom: 30px; }
+
+#projects li {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 32%; }
+  #projects li:nth-child(3n) {
+    margin-right: 0; }
+  #projects li img {
+    width: 100%; }
